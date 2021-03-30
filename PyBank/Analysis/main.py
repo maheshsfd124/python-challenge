@@ -39,11 +39,11 @@ averdiff = totaldiff1/(length_diff-1)
 print("Average Change: " + str(averdiff))
 # print(max(diff))
 # print(diff.index(1926159.0))
-print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( " + str(max(diff))+ ")" )
+print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( $" + str(max(diff))+ ")" )
 # print(min(diff))
 # print(diff.index(-2196167.0))
 # print(budget_month[44])
-print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( " + str(min(diff))+ ")" )
+print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( $" + str(min(diff))+ ")" )
 
 
 # Specify the file to write to
@@ -62,10 +62,10 @@ output_path = os.path.join("result.csv")
 #     csv.writerow((print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( " + str(max(diff))+ ")" )))
 with open('new.txt','w') as f:
     sys.stdout = f
-    print(print(" Total number of months in dataset are: " + str (total_months)))
-    print(print("total " + str (total)))
-    print(print("Average Change: " + str(averdiff)))
-    print(print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( " + str(max(diff))+ ")" ))
-    print (print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( " + str(min(diff))+ ")" ))
+    print(" Total number of months in dataset are: " + str (total_months))
+    print("total " + str (total))
+    print("Average Change: " + str(averdiff))
+    print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( $" + str(max(diff))+ ")" )
+    print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( $" + str(min(diff))+ ")" )
     sys.stdout = original_stdout
 
