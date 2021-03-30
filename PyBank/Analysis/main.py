@@ -79,6 +79,8 @@ output_path = os.path.join("result.csv")
 # Writing back to txt file all output 
 with open('new.txt','w') as f:
     sys.stdout = f
+    print("Financial Analysis")
+    print("---------------------------------------------------------")
     print("Total number of months in dataset are: " + str (total_months))
     print("total " + str (total))
     print("Average Change: " + str(averdiff))

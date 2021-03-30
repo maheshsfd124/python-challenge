@@ -1,3 +1,5 @@
+Financial Analysis
+---------------------------------------------------------
 Total number of months in dataset are: 86
 total 38382578.0
 Average Change: -2315.1176470588234
