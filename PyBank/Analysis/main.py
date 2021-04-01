@@ -42,6 +42,7 @@ x=1
 # writing diff value from amount list back to diff list
 for x in ind:
     diff.append(float(budget_amount[x])-float(budget_amount[x-1]))
+ 
 # print (diff)
 length_diff =len(diff)
 # print(length_diff)
