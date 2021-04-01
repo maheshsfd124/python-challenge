@@ -46,11 +46,11 @@ for x in ind:
 length_diff =len(diff)
 # print(length_diff)
 # Calculating average difference over months
+diff.pop(0)
 totaldiff = 0
 for amt in diff:
     totaldiff = (totaldiff + float(amt))
-totaldiff1 = totaldiff - 196785.0
-averdiff = totaldiff1/(length_diff-1)
+averdiff = totaldiff/(length_diff-1)
 print("Average Change: " + str(averdiff))
 # print(max(diff))
 # print(diff.index(1926159.0))
