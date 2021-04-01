@@ -53,12 +53,12 @@ for amt in diff:
 averdiff = totaldiff/(length_diff-1)
 print("Average Change: " + str(averdiff))
 # print(max(diff))
-# print(diff.index(1926159.0))
-print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( $" + str(max(diff))+ ")" )
+# print(diff.index(max(diff)))
+print("Greatest Increase in Profits: " + " " + str(budget_month[diff.index(max(diff)) + 1]) +" ( $" + str(max(diff))+ ")" )
 # print(min(diff))
-# print(diff.index(-2196167.0))
+# print(diff.index(min(diff)))
 # print(budget_month[44])
-print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( $" + str(min(diff))+ ")" )
+print("Greatest Decrease in Profits: " + " " + str(budget_month[diff.index(min(diff))+1]) +" ( $" + str(min(diff))+ ")" )
 
 
 # Specify the file to write to
@@ -84,7 +84,7 @@ with open('new.txt','w') as f:
     print("Total number of months in dataset are: " + str (total_months))
     print("total " + str (total))
     print("Average Change: " + str(averdiff))
-    print("Greatest Increase in Profits: " + " " + str(budget_month[25]) +" ( $" + str(max(diff))+ ")" )
-    print("Greatest Decrease in Profits: " + " " + str(budget_month[44]) +" ( $" + str(min(diff))+ ")" )
+    print("Greatest Increase in Profits: " + " " + str(budget_month[diff.index(max(diff)) + 1]) +" ( $" + str(max(diff))+ ")" )
+    print("Greatest Decrease in Profits: " + " " + str(budget_month[diff.index(min(diff))+1]) +" ( $" + str(min(diff))+ ")" )
     sys.stdout = original_stdout
 
