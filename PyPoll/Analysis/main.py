@@ -17,15 +17,15 @@ with open(election_csv,newline ='', encoding='utf-8') as electionfile:
         election_votes.append(row[0])
         election_candidate.append(row[2])
         total = len(election_votes)
-    print(" Total number of votes casted : " + " " + str(len(election_votes)))
-    print(" Total number of canidate index: " + " " + str(len(election_candidate)))
+    # print(" Total number of votes casted : " + " " + str(len(election_votes)))
+    # print(" Total number of canidate index: " + " " + str(len(election_candidate)))
     # print (election_candidate[2])
 ind =[]
 output = []
 for y in election_candidate:
     if y not in output:
         output.append(y)
-print(output) 
+# print(output) 
 # finding index to get index of amount list
 count1 =0 
 count2 =0
@@ -56,7 +56,7 @@ votes.append(count2)
 votes.append(count3)
 votes.append(count4)
 
-print(votes)
+# print(votes)
 # print(count2)
 # print(count3)
 # print(count4)
@@ -73,7 +73,7 @@ for key in output:
         break  
   
 # Printing resultant dictionary 
-print ("Resultant dictionary is : " +  str(res))
+# print ("Resultant dictionary is : " +  str(res))
 
 # a_dictionary = {"a": 1, "b": 2, "c": 3}
 
@@ -81,8 +81,8 @@ max_key = max(res, key=res.get)
 all_values = res.values()
 max_value = max(all_values)
 
-print(max_key,max_value)
-
+# print(max_key,max_value)
+#printing all output  with various summary
 print("Election Results")
 print("------------------------")
 print ("Total Votes : " + " " + str(len(election_votes)))
